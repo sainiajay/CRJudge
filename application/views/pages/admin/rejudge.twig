@@ -1,7 +1,6 @@
 {#
- # Sharif Judge
+ # CRJudge
  # file: rejudge.twig
- # author: Mohammad Javad Naderi <mjnaderi@gmail.com>
  #}
 {% set selected = 'assignments' %}
 {% extends 'templates/base.twig' %}
@@ -16,7 +15,7 @@
 </p>
 <p>
 	By clicking on rejudge, all submissions of selected problem will change to <code>PENDING</code> state. Then
-	Sharif Judge rejudges them one by one.
+	CRJudge rejudges them one by one.
 </p>
 <p>
 	If you want to rejudge a single submission, you can click on rejudge button in <a href="{{ site_url('submissions/all') }}">All Submissions</a> or <a href="{{ site_url('submissions/final') }}">Final Submissions</a> page.

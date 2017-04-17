@@ -1,6 +1,6 @@
 <?php
 /**
- * Sharif Judge online judge
+ * CRJudge online judge
  * @file Assignments.php
  * @author Mohammad Javad Naderi <mjnaderi@gmail.com>
  */
@@ -70,7 +70,6 @@ class Assignments extends CI_Controller
 			show_404();
 
 		$this->form_validation->set_rules('assignment_select', 'Assignment', 'required|integer|greater_than[0]');
-
 		if ($this->form_validation->run())
 		{
 			$this->user->select_assignment($this->input->post('assignment_select'));
