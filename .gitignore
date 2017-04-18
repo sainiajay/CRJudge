@@ -5,6 +5,7 @@
 
 # Ignore Twig Cache Files
 application/cache/Twig/*/
+application/logs/*
 
 # Ignore Compiled EasySandbox Files
 tester/easysandbox/EasySandbox.o
