@@ -1,6 +1,6 @@
 <?php
 /**
- * Sharif Judge
+ * CRJudge
  *
  * A free and open source online judge for programming assignments
  *
@@ -8,7 +8,7 @@
  *
  */
 
-define('SHJ_VERSION','1.4');
+define('CRJ_VERSION','1.4');
 
 /**
  * CodeIgniter
