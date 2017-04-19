@@ -297,7 +297,7 @@ $config['encryption_key'] = '6Em2dHDqbXTQcnuk7JA5SjpP9IlZRNti';
 */
 $config['sess_driver']			= 'cookie';
 $config['sess_valid_drivers']	= array();
-$config['sess_cookie_name']		= 'crjsession';
+$config['sess_cookie_name']		= 'shjsession';
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= TRUE;
@@ -365,8 +365,8 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
 $config['csrf_protection'] = TRUE;
-$config['csrf_token_name'] = 'crj_csrf_token';
-$config['csrf_cookie_name'] = 'crjcsrftoken';
+$config['csrf_token_name'] = 'shj_csrf_token';
+$config['csrf_cookie_name'] = 'shjcsrftoken';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = FALSE;
 $config['csrf_exclude_uris'] = array();

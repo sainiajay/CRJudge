@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 {% block title_menu %}
 <span class="title_menu_item">
-	<a href="" target="_blank"><i class="fa fa-question-circle color6"></i> Help</a>
+	<a href="/docs/v0.1/settings.md" target="_blank"><i class="fa fa-question-circle color6"></i> Help</a>
 </span>
 {% endblock %}
 
@@ -145,7 +145,7 @@ $(document).ready(function(){
 
 	<h2 class="shj_form">
 		Sandboxing <span class="title_menu_item">
-			<a href="" target="_blank"><i class="fa fa-question-circle color11"></i> Help</a>
+			<a href="/docs/v0.1/sandboxing.md" target="_blank"><i class="fa fa-question-circle color11"></i> Help</a>
 		</span>
 	</h2>
 
@@ -154,7 +154,7 @@ $(document).ready(function(){
 		<label for="form_easysandbox">EasySandbox</label>
 	</p>
 	<p class="form_comment">Enable EasySandbox for C/C++.<br>
-		You must <a href="" target="_blank">build EasySandbox</a> before enabling it.<br>
+		You must <a href="/docs/v0.1/sandboxing.md#build-easysandbox" target="_blank">build EasySandbox</a> before enabling it.<br>
 		{% if not sandbox_built %}
 			<span style="color: red;">You have not built EasySandbox yet.</span>
 		{% endif %}
@@ -165,10 +165,8 @@ $(document).ready(function(){
 		<label for="form_java_policy">Java Policy</label>
 	</p>
 	<p class="form_comment">
-		Enable <a href="" target="_blank">Java Sandboxing</a>
+		Enable <a href="/docs/v0.1/sandboxing.md#java-sandboxing" target="_blank">Java Sandboxing</a>
 	</p>
-
-
 
 	<h2 class="shj_form" style="display:none">
 		Shield <span class="title_menu_item">
