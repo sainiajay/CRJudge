@@ -2,7 +2,6 @@
 /**
  * CRJudge online judge
  * @file Assignments.php
- * @author Mohammad Javad Naderi <mjnaderi@gmail.com>
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 

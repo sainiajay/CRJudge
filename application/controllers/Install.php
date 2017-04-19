@@ -1,8 +1,7 @@
 <?php
 /**
- * Sharif Judge online judge
+ * CRJudge online judge
  * @file Install.php
- * @author Mohammad Javad Naderi <mjnaderi@gmail.com>
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -24,7 +23,7 @@ class Install extends CI_Controller
 
 
 		if ($this->db->table_exists('sessions'))
-			show_error('Sharif Judge is already installed.');
+			show_error('CRJudge is already installed.');
 
 		$this->form_validation->set_rules('username', 'username', 'required|min_length[3]|max_length[20]|alpha_numeric|lowercase');
 		$this->form_validation->set_rules('email', 'email', 'required|max_length[40]|valid_email|lowercase');

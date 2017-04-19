@@ -1,8 +1,7 @@
 <?php
 /**
- * Sharif Judge online judge
- * @file shj_helper.php
- * @author Mohammad Javad Naderi <mjnaderi@gmail.com>
+ * CRJudge online judge
+ * @file crj_helper.php
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 

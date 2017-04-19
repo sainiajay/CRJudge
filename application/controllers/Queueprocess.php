@@ -1,8 +1,7 @@
 <?php
 /**
- * Sharif Judge online judge
+ * CRJudge online judge
  * @file Queueprocess.php
- * @author Mohammad Javad Naderi <mjnaderi@gmail.com>
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
