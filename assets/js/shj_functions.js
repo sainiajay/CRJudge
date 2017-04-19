@@ -181,8 +181,6 @@ shj.toggle_collapse = function(){
 	}
 }
 
-
-
 // Notifications
 shj.notif_check_time = null;
 shj.check_notifs = function () {

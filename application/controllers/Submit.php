@@ -190,7 +190,7 @@ class Submit extends CI_Controller
 		if ( ! preg_match('/^[a-zA-Z0-9_\-()]+$/', $this->file_name) )
 			show_error('Invalid characters in file name.');
 
-		$user_dir = rtrim($this->assignment_root, '/').'/assignment_'.$this->user->selected_assignment['id'].'/p'.$this->problem['id'].'/'.$this->user->username;
+		$user_dir = rtrim($this->assignment_root, '/').'/assignment_'.$this->user->selected_assignment['id'].'/p'.$this->problem['id'].'/submissions/'.$this->user->username;
 		if ( ! file_exists($user_dir))
 			mkdir($user_dir, 0777, true);
 

@@ -476,13 +476,13 @@ class Submissions extends CI_Controller
 
 			if ($type === 'result')
 				$file_path = rtrim($this->settings_model->get_setting('assignments_root'),'/').
-					"/assignment_{$submission['assignment']}/p{$submission['problem']}/{$submission['username']}/result-{$submission['submit_id']}.html";
+					"/assignment_{$submission['assignment']}/p{$submission['problem']}/submissions/{$submission['username']}/{$submission['file_name']}.log.html";
 			elseif ($type === 'code')
 				$file_path = rtrim($this->settings_model->get_setting('assignments_root'),'/').
-					"/assignment_{$submission['assignment']}/p{$submission['problem']}/{$submission['username']}/{$submission['file_name']}.".filetype_to_extension($submission['file_type']);
+					"/assignment_{$submission['assignment']}/p{$submission['problem']}/submissions/{$submission['username']}/{$submission['file_name']}.".filetype_to_extension($submission['file_type']);
 			elseif ($type === 'log')
 				$file_path = rtrim($this->settings_model->get_setting('assignments_root'),'/').
-					"/assignment_{$submission['assignment']}/p{$submission['problem']}/{$submission['username']}/log-{$submission['submit_id']}";
+					"/assignment_{$submission['assignment']}/p{$submission['problem']}/submissions/{$submission['username']}/{$submission['file_name']}.log";
 			else
 				$file_path = '/nowhere'; // This line is never reached!
 
@@ -532,7 +532,7 @@ class Submissions extends CI_Controller
 			exit('Don\'t try to see submitted codes :)');
 
 		$file_path = rtrim($this->settings_model->get_setting('assignments_root'),'/').
-		"/assignment_{$submission['assignment']}/p{$submission['problem']}/{$submission['username']}/{$submission['file_name']}.".filetype_to_extension($submission['file_type']);
+		"/assignment_{$submission['assignment']}/p{$submission['problem']}/submissions/{$submission['username']}/{$submission['file_name']}.".filetype_to_extension($submission['file_type']);
 
 		$this->load->helper('download');
 		force_download(

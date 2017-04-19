@@ -395,8 +395,6 @@ class Assignments extends CI_Controller
 		$assignments_root = rtrim($this->settings_model->get_setting('assignments_root'), '/');
 		$assignment_dir = "$assignments_root/assignment_{$the_id}";
 
-
-
 		// Adding/Editing assignment in database
 
 		if ( ! $this->assignment_model->add_assignment($the_id, $this->edit))
@@ -418,7 +416,6 @@ class Assignments extends CI_Controller
 			mkdir($assignment_dir, 0777);
 
 
-
 		// Upload Tests (zip file)
 
 		shell_exec('rm -f '.$assignments_root.'/*.zip');
@@ -429,6 +426,7 @@ class Assignments extends CI_Controller
 		$this->upload->initialize($config);
 		$zip_uploaded = $this->upload->do_upload('tests_desc');
 		$u_data = $this->upload->data();
+		
 		if ( $_FILES['tests_desc']['error'] === UPLOAD_ERR_NO_FILE )
 			$this->messages[] = array(
 				'type' => 'notice',
@@ -483,7 +481,7 @@ class Assignments extends CI_Controller
 		if ($zip_uploaded) // if zip file is uploaded
 		{
 			// Create a temp directory
-			$tmp_dir_name = "shj_tmp_directory";
+			$tmp_dir_name = "tmp_directory";
 			$tmp_dir = "$assignments_root/$tmp_dir_name";
 			shell_exec("rm -rf $tmp_dir; mkdir $tmp_dir;");
 
@@ -505,6 +503,7 @@ class Assignments extends CI_Controller
 					shell_exec("cd $assignment_dir; rm -f *.pdf");
 				// Copy new test cases from temp dir
 				shell_exec("cd $assignments_root; cp -R $tmp_dir_name/* assignment_{$the_id};");
+				
 				$this->messages[] = array(
 					'type' => 'success',
 					'text' => 'Tests (zip file) extracted successfully.'
@@ -527,20 +526,34 @@ class Assignments extends CI_Controller
 			shell_exec("rm -rf $tmp_dir");
 		}
 
+		// Delete unwanted files and folders
 
+		shell_exec("find $assignment_dir -mindepth 1 -maxdepth 1 -type d ! -name 'p[0-9]*' -exec rm -rf {} \;");
+		shell_exec("find $assignment_dir -mindepth 1 -maxdepth 1 -type f -delete");
 
 		// Create problem directories and parsing markdown files
-
+		
+		$count = 0;
 		for ($i=1; $i <= $this->input->post('number_of_problems'); $i++)
 		{
-			if ( ! file_exists("$assignment_dir/p$i"))
-				mkdir("$assignment_dir/p$i", 0700);
+			if ( ! file_exists("$assignment_dir/p$i/in") || ! file_exists("$assignment_dir/p$i/out"))
+			{
+				//mkdir("$assignment_dir/p$i", 0777);
+				$count++;
+			}
 			elseif (file_exists("$assignment_dir/p$i/desc.md"))
 			{
 				$this->load->library('parsedown');
 				$html = $this->parsedown->parse(file_get_contents("$assignment_dir/p$i/desc.md"));
 				file_put_contents("$assignment_dir/p$i/desc.html", $html);
 			}
+		}
+
+		if( $count ){
+			$this->messages[] = array(
+				'type' => 'error',
+				'text' => 'Incorrect zip structure. Removing all extracted files.'
+			);
 		}
 
 		return TRUE;
