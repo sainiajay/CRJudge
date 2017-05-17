@@ -10,4 +10,4 @@ Python in CRJudge is not sandboxed yet. Just a simple (low) level of security is
 Documentation
 ===============
 
-  * [CR v1.4 Documentation](v1.4)
+  * [CR v1.4 Documentation](v1.4/readme.md)
