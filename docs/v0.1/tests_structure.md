@@ -8,12 +8,12 @@ There are two methods of checking output for each problem: “Input/Output Compa
 Input/Output Comparison method
 ------------------------------
 
-In this method, you must put some input and output files in the problem's folder. Sharif Judge gives each test's input file to user's code and compares user's output with the test's output. Input files must be in folder in with names input1.txt, input2.txt, … and output files must be in folder out with names output1.txt, output2.txt, …
+In this method, you must put some input and output files in the problem's folder. CRJudge gives each test's input file to user's code and compares user's output with the test's output. Input files must be in folder in with names input1.txt, input2.txt, … and output files must be in folder out with names output1.txt, output2.txt, …
 
 Tester method
 -------------
 
-In this method, you must provide some input test files and a C++ file (tester.cpp) and (optionally) some output test files. Sharif Judge gives the input test file to user's code and gets the user's output. Then tester.cpp gets test's input, test's output and user's output. If the user's output is correct, returns 0, otherwise returns 1.
+In this method, you must provide some input test files and a C++ file (tester.cpp) and (optionally) some output test files. CRJudge gives the input test file to user's code and gets the user's output. Then tester.cpp gets test's input, test's output and user's output. If the user's output is correct, returns 0, otherwise returns 1.
 
 You can use this code template for writing tester.cpp:
 
@@ -44,7 +44,7 @@ int main(int argc, char const *argv[])
 Sample File
 -----------
 
-You can find a sample tests file in Assignments folder of Sharif Judge.
+You can find a sample tests file in Assignments folder of CRJudge.
 
 The tree of this file is:
 

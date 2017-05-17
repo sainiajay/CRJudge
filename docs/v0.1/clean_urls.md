@@ -1,6 +1,6 @@
 # Clean URLs
 
-By default, `index.php` is a part of all urls in Sharif Judge. e.g.
+By default, `index.php` is a part of all urls in CRJudge. e.g.
 
     http://example.mjnaderi.ir/index.php/dashboard
     http://example.mjnaderi.ir/index.php/users/add
@@ -12,7 +12,7 @@ You can remove `index.php` and have pretty and nice urls if your system supports
 
 ## Enabling clean urls
 
-Rename file `.htaccess2` located in the main directory of Sharif Judge to `.htaccess`.
+Rename file `.htaccess2` located in the main directory of CRJudge to `.htaccess`.
 
 This is `.htaccess2` file:
 

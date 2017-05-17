@@ -162,7 +162,7 @@ e.g. `C, C++   , Zip` or `Python 2,Python 3` or `Java ,C`
 Diff Command
 ------------
 
-The command used to compare output with correct output. By default Sharif Judge uses `diff`. But you can change this command here.
+The command used to compare output with correct output. By default CRJudge uses `diff`. But you can change this command here.
 
 This field should not contain any space.
 
@@ -173,12 +173,12 @@ You can set arguments of Diff command here. See `man diff` for a complete list o
 
 I have added two new options: `ignore` and `identical`.
 
-  * **`ignore`**: Sharif Judge ignores all newlines and whitespaces.
-  * **`identical`**: Sharif Judge doesn't ignore anything. Output of submitted file must be identical to the test case's output to be accepted.
+  * **`ignore`**: CRJudge ignores all newlines and whitespaces.
+  * **`identical`**: CRJudge doesn't ignore anything. Output of submitted file must be identical to the test case's output to be accepted.
 
 This field should not contain any space. You may consider using `-b`, `-bB`, `-iw` or `ignore`.
 
 Upload Only
 -----------
 
-If you set a problem as Upload-Only, Sharif Judge will not judge submissions of that problem. You can use `Zip` and `PDF` in allowed languages if you have enabled this option.
+If you set a problem as Upload-Only, CRJudge will not judge submissions of that problem. You can use `Zip` and `PDF` in allowed languages if you have enabled this option.

@@ -1,9 +1,9 @@
 # Users
 
-In Sharif Judge, users are grouped into 4 groups: Admins, Head Instructors, Instructors, and Students.
+In CRJudge, users are grouped into 4 groups: Admins, Head Instructors, Instructors, and Students.
 
 ## User roles
-There are four user roles in Sharif Judge.
+There are four user roles in CRJudge.
 
 | User Role       | User Level |
 | --------------- | ---------- |
@@ -47,13 +47,13 @@ An example:
 
     # This is a comment!
     # This is another comment!
-    instructor instructor@sharifjudge.ir 123456 head_instructor
-    instructor2 instructor2@sharifjudge.ir random[7] instructor
-    student1 st1@sharifjudge.ir random[6] student
-    student2 st2@sharifjudge.ir random[6] student
-    student3 st3@sharifjudge.ir random[6] student
-    student4 st4@sharifjudge.ir random[6] student
-    student5 st5@sharifjudge.ir random[6] student
-    student6 st6@sharifjudge.ir random[6] student
-    student7 st7@sharifjudge.ir random[6] student
+    instructor instructor@crjudge.ir 123456 head_instructor
+    instructor2 instructor2@crjudge.ir random[7] instructor
+    student1 st1@crjudge.ir random[6] student
+    student2 st2@crjudge.ir random[6] student
+    student3 st3@crjudge.ir random[6] student
+    student4 st4@crjudge.ir random[6] student
+    student5 st5@crjudge.ir random[6] student
+    student6 st6@crjudge.ir random[6] student
+    student7 st7@crjudge.ir random[6] student
 

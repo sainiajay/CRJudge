@@ -1,8 +1,8 @@
-# Sharif Judge v1.4 Documentation
+# CRJudge v0.1 Documentation
 
 Table of contents:
 
-* [Installation](installation.md)
+* [Getting Started](installation.md)
 * [Clean URLs](clean_urls.md)
 * [Users](users.md)
 * [Add Assignment](add_assignment.md)
@@ -13,4 +13,3 @@ Table of contents:
 * [Security](security.md)
 * [Sandboxing](sandboxing.md)
 * [Shield](shield.md)
-

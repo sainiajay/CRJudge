@@ -1,6 +1,6 @@
 # Sample Assignment
 
-Here is a sample assignment for testing Sharif Judge. Add this assignment by clicking on `Add` in `Assignments` page.
+Here is a sample assignment for testing CRJudge. Add this assignment by clicking on `Add` in `Assignments` page.
 
 ## Problems
 

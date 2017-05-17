@@ -6,7 +6,7 @@ Shield is not a sandboxing solution. Shield provides only a partial protection a
 
 ## Shield for C/C++
 
-By enabling Shield for C/C++, Sharif Judge just adds some `#define`s at the beginning of submitted C/C++ code before running.
+By enabling Shield for C/C++, CRJudge just adds some `#define`s at the beginning of submitted C/C++ code before running.
 
 For example we can forbid using `goto` by adding this line at the beginning of submitted code:
 
@@ -60,7 +60,7 @@ Note that lots of these rules are not usable in g++. For example we cannot use `
 
 ## Shield for Python
 
-By enabling Shield for Python, Sharif Judge just adds some code at the beginning of submitted Python code before running to prevent using dangerous functions. These codes are located in files `tester/shield/shield_py2.py` and `tester/shield/shield_py3.py`.
+By enabling Shield for Python, CRJudge just adds some code at the beginning of submitted Python code before running to prevent using dangerous functions. These codes are located in files `tester/shield/shield_py2.py` and `tester/shield/shield_py3.py`.
 
 You can enable/disable Shield for Python in Settings.
 

@@ -60,6 +60,6 @@ I use 3, 5. You can use different soft and hard limits.
 
 ## Step 4. Use Two Servers
 
-Use a server for web interface and handling web requests and use another server for running submitted codes. This decreases the risk of running submitted codes. You need to change Sharif Judge's source code to achieve this. Maybe I add this feature in future.
+Use a server for web interface and handling web requests and use another server for running submitted codes. This decreases the risk of running submitted codes. You need to change CRJudge's source code to achieve this. Maybe I add this feature in future.
 
 
