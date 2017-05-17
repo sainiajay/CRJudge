@@ -8,3 +8,9 @@ application/cache/Twig/*/
 
 # Ignore log files
 application/logs/*
+
+# keys
+
+server.csr
+server.crt
+server.key
